@@ -85,16 +85,11 @@ int main(){
 		d1.printVetorAlunos();
 
 		std::cout << "\nO curso " << d1.getCursoDisciplina().getNomeCurso() << " possui o " << 
-		d1.getCursoDisciplina().getCoordenadorCurso().getNome() << " como coordenador de curso" << std::endl;
+		d1.getCursoDisciplina().getCoordenadorCurso().getNome() << " como coordenador de curso;" << std::endl;
 
-		std::cout << "\nA disciplina " << d1.getNome() << " ministrada pelo professor" << d1.getNomeProfessor() <<
-		" possui um total de " << d1.getQtdAlunos() << " alunos vinculados" << std::endl;
+		std::cout << "\nA disciplina " << d1.getNome() << " ministrada pelo professor " << d1.getNomeProfessor() <<
+		" possui um total de " << d1.getQtdAlunos() << " alunos vinculados." << std::endl;
 
-		delete &prof;
-		delete &p1;
-		delete &p2;
-		delete &d1;
-		delete &c1;
 	}
 	catch(const std::exception& e)
 	{
